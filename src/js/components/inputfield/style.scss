@@ -1,0 +1,38 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.inputfield-valid {
+  @include hide;
+}
+
+.inputfield-invalid {
+  @include show;
+  color: $ValidationError;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+fieldset:first-child div {
+  padding: 5px 0;
+  text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  font-size: 1em;
+  padding: 10px 2px;
+  margin: 5px 0;
+  width: 60%;
+  float: right;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+label {
+  text-transform: capitalize;
+  float: left;
+  text-align: left;
+  max-width: 150px;
+  padding: 5px 0 0;
+}

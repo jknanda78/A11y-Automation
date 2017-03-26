@@ -1,0 +1,27 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+input {
+  &[type='button'] {
+    border: 0;
+    font-size: .8em;
+    font-weight: 300;
+    padding: 12px;
+    width: 40%;
+  }
+
+  &[type='submit'] {
+    border: 0;
+    padding: 12px;
+    width: 40%;
+  }
+}
+
+.buttons {
+  margin-top: 20px;
+  padding: 5px 0;
+
+  .primary {
+    margin-left: 15px;
+  }
+}

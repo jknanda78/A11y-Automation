@@ -1,0 +1,85 @@
+@import "normalize";
+
+header {
+  width: 100%;
+  min-height: 100px;
+  background: #2f2e2e;
+}
+
+main {
+  margin: 0 auto;
+  width: 30%;
+  min-width: 320px;
+  background: #ffffff;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  border-color: #e9e6e6;
+}
+
+h1 {
+  float: left;
+  padding: 10px 5px;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #b3b3b3;
+  margin-right: 190px;
+}
+
+nav {
+  float: left;
+  padding: 20px 0 15px;
+  ul {
+    li {
+      float: left;
+      border-right: 1px solid #b3b3b3;
+      a {
+        padding: 3px 10px 0;
+        color: #b3b3b3;
+        display: block;
+        font-size: 1em;
+      }
+    }
+    & :last-child {
+      border-right: none;
+    }
+    .active {
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 10px 2px;
+  width: 100%;
+  text-align: center;
+}
+
+form {
+  label {
+    font-size: 1.1em;
+    font-weight: 300;
+  }
+  input[type="submit"] {
+    font-size: 1em;
+    color: #2f2e2e;
+  }
+}
+
+footer {
+  padding: 5px;
+  width: 100%;
+  min-height: 50px;
+  background: #2f2e2e;
+  color: #b3b3b3;
+  position: fixed;
+  bottom: 0;
+  p {
+    padding: 0 5px;
+    float: right;
+    font-size: 0.8em;
+  }
+}
